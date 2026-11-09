@@ -1171,3 +1171,19 @@ a.visits-pill:hover{border-color:var(--brand)}
 
 ::selection{background:#FDD001;color:#2a1624}
 .demo-bar b{background:#913768}
+
+/* ===== اختيار ألوان البرنامج ===== */
+.pal{position:relative}
+.pal-menu{position:absolute;top:calc(100% + 8px);inset-inline-end:0;z-index:40;min-width:220px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px -12px rgba(30,20,40,.35);padding:8px;display:grid;gap:4px}
+.pal-menu[hidden]{display:none}
+.pal-h{font-size:13px;color:var(--ink-3);font-weight:700;padding:4px 8px 6px}
+.pal-opt{display:flex;align-items:center;gap:12px;width:100%;padding:10px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;text-align:start}
+.pal-opt:hover{background:var(--brand-l)}
+.pal-opt:focus-visible{outline:3px solid color-mix(in srgb,var(--brand) 50%,transparent);outline-offset:1px}
+.pal-opt[aria-pressed="true"]{border-color:var(--brand);background:var(--brand-l)}
+.pal-opt[aria-pressed="true"]::after{content:"";margin-inline-start:auto;width:8px;height:14px;border:solid var(--brand);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-2px,-2px)}
+.pal-sw{display:inline-flex;flex:none}
+.pal-sw i{width:22px;height:22px;border-radius:50%;border:2px solid var(--paper);margin-inline-start:-7px;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.pal-sw i:first-child{margin-inline-start:0}
+@media (max-width:600px){.pal-menu{position:fixed;top:var(--pal-top,80px);inset-inline:12px;min-width:0}}
+@media (max-width:430px){.topbar .iconbtn{width:36px}.top-extra .visits-pill{display:none}}

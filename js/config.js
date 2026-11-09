@@ -5,7 +5,7 @@ const SUPABASE_KEY = "sb_publishable_X4VEzOBLuT8d-b7Tsz9IJQ_1QHW9BIe"; // مفت
 const PHOTO_BUCKET = "f4-photos";
 const XLSX_URL = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js";
 const COUNTRY_CODE = "973"; // البحرين — لروابط واتساب
-const CONTACT_WA = "36989892"; // رقم التواصل مع إدارة البرنامج
+const CONTACT_WA = "35603690"; // رقم التواصل مع إدارة البرنامج
 
 const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
